@@ -1,19 +1,27 @@
-object main extends App{
+object Main {
+    val ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ .,"
+    val KEY = 5
 
-  val alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    def shift(dir: Int, idx: Int, key: Int, asize: Int) = {
+        var temp = (idx + dir * key) % asize
+        if(temp < 0) temp = temp + asize
+        temp
+    }
 
-  val Encrypt=(letter:Char,key:Int,alp:String)=> alp((alp.indexOf(letter.toUpper)+key)%alp.size)
+    def Encrypt(c: Char, key: Int, a: String) = a(shift(1, a.indexOf(c.toUpper), 5, a.size))
 
-  val Decrypt=(letter:Char,key:Int,alp:String)=> alp((alp.indexOf(letter.toUpper)-key)%alp.size)
+    def Decrypt(c: Char, key: Int, a: String) = a(shift(-1, a.indexOf(c.toUpper), 5, a.size))
 
+    def cipher(algo: (Char, Int, String) => Char, s: String, key: Int, a: String) = s.map(algo(_, key, a))
 
-  val cipher=(algo:(Char,Int,String)=>Char,s:String,key:Int,a:String)=> s.map(algo(_,key,a))
+    def main(args: Array[String]) = {
+        val text = "Hello, Functional Programming."
 
-  val enc=cipher(Encrypt,"Devin",3,alphabet)
+        val ct = cipher(Encrypt, text, KEY, ALPHABET)
+        println("\nCiper text : " + ct + "\n")
 
-  val dec=cipher(Decrypt,enc,3,alphabet)
+        val pt = cipher(Decrypt, ct, KEY, ALPHABET)
+        println("Original text : " + pt)
 
-  println(enc)
-  println(dec)
-
+    }
 }

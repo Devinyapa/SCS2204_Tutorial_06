@@ -1,6 +1,6 @@
 #FileLock
-#Mon Sep 05 22:10:46 IST 2022
-server=localhost\:9175
-hostName=localhost
+#Tue Sep 06 07:46:22 IST 2022
+hostName=DESKTOP-BJ353IF
+id=183109595b383c90f2c622b86ecc6c9eb6704d77f37
 method=file
-id=1830e869e2465bfaadf5333cdd4ced61812aa59f830
+server=192.168.56.1\:11875

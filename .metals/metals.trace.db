@@ -1,0 +1,27 @@
+2022-09-05 22:25:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKSHEET_DEPENDENCY_SOURCE" not found; SQL statement:
+select worksheet_uri from worksheet_dependency_source where text_document_uri = ?; [42102-214]
+2022-09-05 22:26:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKSHEET_DEPENDENCY_SOURCE" not found; SQL statement:
+select worksheet_uri from worksheet_dependency_source where text_document_uri = ?; [42102-214]
+2022-09-05 22:26:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKSHEET_DEPENDENCY_SOURCE" not found; SQL statement:
+select worksheet_uri from worksheet_dependency_source where text_document_uri = ?; [42102-214]
+2022-09-05 22:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKSHEET_DEPENDENCY_SOURCE" not found; SQL statement:
+select worksheet_uri from worksheet_dependency_source where text_document_uri = ?; [42102-214]
+2022-09-05 22:28:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKSHEET_DEPENDENCY_SOURCE" not found; SQL statement:
+select worksheet_uri from worksheet_dependency_source where text_document_uri = ?; [42102-214]
+2022-09-05 22:29:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKSHEET_DEPENDENCY_SOURCE" not found; SQL statement:
+select worksheet_uri from worksheet_dependency_source where text_document_uri = ?; [42102-214]
+2022-09-05 23:19:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKSHEET_DEPENDENCY_SOURCE" not found; SQL statement:
+select worksheet_uri from worksheet_dependency_source where text_document_uri = ?; [42102-214]
+2022-09-05 23:20:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKSHEET_DEPENDENCY_SOURCE" not found; SQL statement:
+select worksheet_uri from worksheet_dependency_source where text_document_uri = ?; [42102-214]
+2022-09-05 23:31:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "FINGERPRINTS" not found; SQL statement:
+insert into fingerprints (path, text, md5) values (?, ?, ?) [42102-214]
